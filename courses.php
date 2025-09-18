@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Graduate Application</title>
-</head>
-<body>
+<?php
+  $firstname = $_POST['firstname'];
+  $lastname = $_POST['lastname'];
+?>
 
-    <h2>Welcome, <?php echo $_POST['firstname'] . ' ' . $_POST['lastname']; ?>!</h2>
-    <p>Select the courses you have completed:</p>
-
-    <form action="accomplishments.php" method="post">
- 
-
-        
-        <input type="submit" value="Next: Accomplishments">
-    </form>
-
-</body>
-</html>
+<form action="accomplishments.php" method="post">
+    <h2>Welcome, <?php echo $firstname; ?>!</h2>
+    
+    <input type="checkbox" name="courses[]" ...>
+    
+    <input type="hidden" name="firstname" value="<?php echo $firstname; ?>">
+    <input type="hidden" name="lastname" value="<?php echo $lastname; ?>">
+    
+    <input type="submit" value="Next">
+</form>
