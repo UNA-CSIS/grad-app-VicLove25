@@ -1,8 +1,11 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Graduate Application</title>
+    <title>Graduate Application 1/5</title>
 </head>
 <body>
 
